@@ -1,0 +1,23 @@
+// --root 
+$dark: #031200;
+$light: #fff;
+$link-decoration: none;
+$primary: #006400;
+
+
+/// light 
+$link-color: $light;
+$list-group-bg: $dark;
+$list-group-color: $light;
+
+/// dark  
+$bs-body-bg: $dark;
+$body-bg-dark: $dark;
+$link-color-dark: $dark;
+$list-group-color-dark: $dark;
+$list-group-bg-dark: $light;
+
+
+
+//import 
+@import '../node_modules/bootstrap/scss/bootstrap';

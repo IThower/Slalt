@@ -1,0 +1,35 @@
+.hr{
+    height: 1px;
+    flex: 1 0 0;
+
+}
+
+.overlay{
+    background: url("../public/images/slalt-oculos-dourado-1.png");
+    mix-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    padding: 0!important;
+    margin: 0!important;
+    
+}
+
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+.square{
+    width: 45px;
+    height: 40px;
+}
+
+.squareicons{
+
+    font-size: 25px!important;
+}
