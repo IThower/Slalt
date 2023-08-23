@@ -17,6 +17,7 @@
     color: var(--green)!important;
 }
 
+
 .white-text{
     color: var(--white)!important;
 }
@@ -32,6 +33,18 @@
 .white-svg{
     fill: url(--white)!important;
     z-index: 9999!important;
+}
+
+.switch-bg-lua{
+    background-image: url("../public/images/switch-lua.svg"), url("../public/images/switch-el-1.svg") !important;
+    background-color: grey!important;
+    z-index: 999;
+}
+
+.switch-bg-dia{
+    background-image: url("../public/images/switch-dia.svg"), url("../public/images/switch-el-light-1.svg") !important;
+    background-color: #92868644!important;
+    z-index: 999;
 }
 
 .green-svg{
