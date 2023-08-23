@@ -1,8 +1,59 @@
-.hr{
+
+:root {
+    --green: #006400;
+    --white: #ffffff;
+  }
+
+
+.green-bg{
+    background-color: var(--green)!important;
+}
+
+.green-bg:hover{
+    opacity: 0.8!important;
+}
+
+.green-text{
+    color: var(--green)!important;
+}
+
+.white-text{
+    color: var(--white)!important;
+}
+
+.white-bg{
+    background-color: var(--white)!important;
+}
+
+.white-bg:hover{
+    opacity: 0.8!important;
+}
+
+.white-svg{
+    fill: url(--white)!important;
+    z-index: 9999!important;
+}
+
+.green-svg{
+    fill: url(--green)!important;
+    z-index: 9999!important;
+}
+
+.hr-green{
     height: 1px;
     flex: 1 0 0;
-
+    background-color: var(--green)!important;
+    z-index: 999!important;
 }
+
+.hr-white{
+    height: 1px;
+    flex: 1 0 0;
+    background-color: var(--white)!important;
+    z-index: 999!important;
+}
+
+
 
 .overlay{
     background: url("../public/images/slalt-oculos-dourado-1.png");
@@ -18,6 +69,7 @@
     
 }
 
+
 *{
     font-family: Montserrat;
     margin: 0;
@@ -30,6 +82,5 @@
 }
 
 .squareicons{
-
     font-size: 25px!important;
 }
