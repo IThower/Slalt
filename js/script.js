@@ -1,8 +1,8 @@
 const logoImage = document.getElementById("logo-img");
 
 const imageUrls = [
-  "public/images/logo-slalt-records-11.png",
-  "public/images/logo-slalt-records-light-11.png",
+  "public/images/LOGO_SLALT_RECORDS_BRANCO.png",
+  "public/images/LOGO_SLALT_RECORDS_ESCURO.png",
 ];
 
 // Índice atual da URL da imagem
@@ -48,8 +48,8 @@ function applyDarkThemeStyles() {
 
   linksbrands.forEach((linkbrands) => {
     console.log(linkbrands);
-    linkbrands.classList.remove("white-bg", "green-text");
-    linkbrands.classList.add("green-bg", "white-text");
+    linkbrands.classList.remove("green-bg", "white-text");
+    linkbrands.classList.add("white-bg", "green-text");
   });
 
   pathElement1.setAttribute("fill", "white");
@@ -88,8 +88,8 @@ function applyLightThemeStyles() {
   switchbg.classList.add("switch-bg-dia");
 
   linksbrands.forEach((linksbrands) => {
-    linksbrands.classList.remove("green-bg", "white-text");
-    linksbrands.classList.add("white-bg", "green-text");
+    linksbrands.classList.remove("white-bg", "green-text");
+    linksbrands.classList.add("green-bg", "white-text");
   });
 
   pathElement1.setAttribute("fill", "#006400");
