@@ -73,12 +73,15 @@
     mix-blend-mode: soft-light;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: -1;
     padding: 0!important;
     margin: 0!important;
+    
+    right: 0!important;
+    bottom: 0!important;
     
 }
 
@@ -101,4 +104,16 @@
 
 .squareicons{
     font-size: 25px!important;
+}
+
+.imgtam{
+    width: 300px!important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .imgtam{
+        width: 180px!important;
+    }
+    
 }
