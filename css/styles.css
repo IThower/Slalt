@@ -2,6 +2,8 @@
 :root {
     --green: #006400;
     --white: #ffffff;
+    --bg-green-section: #031200;
+    --dark-green: #031200;
   }
 
 
@@ -17,6 +19,13 @@
     color: var(--green)!important;
 }
 
+.darkgreen-text{
+    color: var(--dark-green)!important;
+}
+
+.darkgreen-bg{
+    background-color: var(--dark-green)!important;
+}
 
 .white-text{
     color: var(--white)!important;
@@ -52,11 +61,56 @@
     z-index: 9999!important;
 }
 
+.activeNav{
+
+    border-bottom: 3px solid #3BBC20!important;
+}
+
+.btnlimegreen{
+    display: flex!important;
+    padding: 12px 24px!important;
+    justify-content: center!important;
+    align-items: center!important;
+    gap: 10px!important;
+    border-radius: 32px!important;
+    background: var(--verde-claro, #3BBC20)!important;
+}
+
 .hr-green{
     height: 1px;
     flex: 1 0 0;
     background-color: var(--green)!important;
     z-index: 999!important;
+}
+
+.estudio{
+    width: 3626px;
+    height: 1250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(../public/images/slalt-oculos-dourado-1.png), lightgray 50% / cover no-repeat;
+
+}
+
+.bg-hero{
+    background: linear-gradient(180deg, rgba(3, 18, 0, 0.70) 0%, #031200 90.54%);
+}
+
+.hr-white2{
+    width: 135.5px;
+    height: 2px;
+    background-color: var(--white)!important;
+    z-index: 999!important;
+}
+.hr-green2{
+    width: 135.5px;
+    height: 2px;
+    background-color: var(--bg-green-section)!important;
+    z-index: 999!important;
+}
+
+.bg-green-section{
+    background-color: var(--bg-green-section)!important;
 }
 
 .hr-white{
