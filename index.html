@@ -33,12 +33,11 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body style="background-image: url(./public/images/pexels-photo-by-blaz-erzetic.png); background-repeat: no-repeat; background-size: contain;">
+<body style="background-image: url(./public/images/pexels-photo-by-blaz-erzetic.png); background-size: contain;">
 
     <!-- Navbar -->
     <header class="header bg-hero" style="position: relative;">
     <div class="container">
-
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand flex-grow-1" href="#">
@@ -74,7 +73,7 @@
       </nav>
 
     <div class="row">
-        <div class="col-12" style="padding-top: 30vh; padding-bottom: 30vh">
+        <div class="col-12 paddingvh">
             <div class="hero-text text-white d-flex justify-content-center align-items-center flex-column">
                 <h1 class="fw-bold">SLALT RECORDS</h1>
                 <p class="lead">Lorem ipsum dolor sit amet consectetur. Et elementum elit non pellentesque tempor malesuada gravida. Sed est scelerisque eget nec. Faucibus placerat id odio sit amet duis. Nunc faucibus aliquam a venenatis gravida nibh dolor praesent morbi. Nulla mi pretium metus consectetur morbi urna nibh id vel. Id vel non netus fermentum eu enim </p>
@@ -82,8 +81,7 @@
             </div>
             </div>
         </div>
-            <img src="./public/images/parental2.png" class="img-fluid" alt="parental advisory explicit content" 
-            style="position: absolute; right: 300px;">
+            <img src="./public/images/parental2.png" class="img-fluid parental" alt="parental advisory explicit content">
     </div>
 </header>
 
@@ -214,7 +212,6 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed text-white" style="background-color: rgba(11, 43, 5, 0.95);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <strong class="me-3">1.</strong><p class="flex-grow-1 m-0 p-0">Vantagem Número 01</p>
-                            <span class="span-form2 ms-2"><img src="./public/images/down-arrow.svg" alt="Vetor"></span>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -228,7 +225,6 @@
                         <button class="accordion-button collapsed text-white" style="background-color: rgba(11, 43, 5, 0.95);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <strong class="me-3">2.</strong>
                             <p class="flex-grow-1 m-0 p-0">Vantagem Número 02</p>
-                            <span class="span-form2 ms-2"><img src="./public/images/down-arrow.svg" alt="Vetor"></span>
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -242,7 +238,6 @@
                         <button class="accordion-button collapsed text-white" style="background-color: rgba(11, 43, 5, 0.95);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <strong class="me-3">3.</strong>
                             <p class="flex-grow-1 m-0 p-0">Vantagem Número 03</p>
-                            <span class="span-form2 ms-2"><img src="./public/images/down-arrow.svg" alt="Vetor"></span>
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -264,7 +259,7 @@
                 <h2 class="white-text px-3 fw-bold">Nossos Preços</h2>
             </div>
 
-            <div class="card p-5 card-dark-green text-white" style="width: 22rem; z-index: 1; left: 1em;">
+            <div class="card p-5 card-dark-green text-white cardesquerda">
                 <div class="card-body">
                   <h5 class="card-title white-text fw-bold">Gravação Simples</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary"><span class="white-text superscript">R$</span> <span class="fw-bold white-text fs-2">30</span><span class="white-text precocardhora">/por hora</span></h6>
@@ -272,17 +267,17 @@
                 </div>
             </div>
 
-            <div class="card p-5 light-green-bg text-white" style="width: 24rem; z-index: 2; position: relative; top: -1em;">
+            <div class="card p-5 light-green-bg text-white cardmeio">
                 <div class="card-body">
                   <h5 class="card-title white-text fw-bold">Gravação Completa</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary"><span class="white-text superscript">R$</span> <span class="fw-bold white-text fs-2">60</span><span class="white-text precocardhora">/por hora</span></h6>
                   <p class="card-text">Gravações especiais com todos os recursos</p>
-                  <a href="#" class="card-link btn btn-primary d-flex justify-content-center align-items-center
+                  <a href="https://wa.me/message/YRDCL3FL3MSVF1" class="card-link btn btn-primary d-flex justify-content-center align-items-center
                   " style="width: 100%; background-color: #031200;">Agende seu horário<span class="span-form ms-2"><img src="./public/images/vector-386.svg" alt="Vetor"></span></a>
                 </div>
             </div>
 
-            <div class="card p-5 card-dark-green text-white" style="width: 22rem; z-index: 1; right: 1em;">
+            <div class="card p-5 card-dark-green text-white carddireita">
                 <div class="card-body">
                   <h5 class="card-title white-text fw-bold">Gravação Premium</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary"><span class="white-text superscript">R$</span> <span class="fw-bold white-text fs-2">90</span><span class="white-text precocardhora">/por hora</span></h6>
@@ -307,9 +302,8 @@
                 <div class="hr hr-white2"></div>
             </div>
 
-            <div class="col-md-6">
-
-                <form class="card-dark-green p-5 form-border" style="width: 100%; height: 100%;">
+            <div class="col-md-6 colmargin">
+                <form class="card-dark-green p-5 form-border " style="width: 100%; height: 100%;">
                         <div class="mb-3">
                       <label for="nome" class="form-label white-text">Nome Completo</label>
                       <input type="text" class="form-control form-border" id="nome" aria-describedby="emailHelp" placeholder="ex: Fabio Carvalho" >
@@ -327,11 +321,9 @@
                         <textarea class="form-control form-border" placeholder="Mande sua mensagem para nossa equipe" id="mensagem" style="height: 160px;"></textarea>
                       </div>
                     <button type="submit" class="btn btn-primary px-5 py-3 my-4 d-flex justify-content-center align-items-center" style="width: 100%; background-color: #031200;">Mande sua mensagem <span class="span-form ms-2"><img src="./public/images/vector-386.svg" alt="Vetor"></span></button>
-                    
                   </form>
             </div>
-            <div class="col-md-6">
-                
+            <div class="col-md-6 col-sm-12">
                 <div class="wrapper" style="position:relative;">
                 <img src="./public/images/image-map.png" alt="Mapa" class="img-fluid">
                 <div class="overlay-map">

@@ -14,6 +14,97 @@
     
 }
 
+.paddingvh{
+   padding-top: 30vh!important; 
+   padding-bottom: 30vh!important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke= 'green' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+}
+
+.navbar-toggler{
+  border: 2px solid green!important;
+}
+.navbar-toggler:focus{
+  box-shadow: none!important;
+}
+
+
+
+.cardmeio{
+    width: 24rem!important; 
+    z-index: 2!important; 
+    position: relative!important; 
+    top: -1em!important;
+}
+
+.cardesquerda{
+    width: 22rem!important; 
+    z-index: 1!important; 
+    left: 1em!important;
+}
+
+.carddireita{
+    width: 22rem!important; 
+    z-index: 1!important; 
+    right: 1em!important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cardmeio{
+        width: 22rem!important; 
+        z-index: 2!important; 
+        top: 0em!important;
+    }
+    
+    .cardesquerda{
+        width: 20rem!important; 
+        z-index: 1!important;
+        left: 0em!important;
+        top: 1em!important;
+    }
+    
+    .carddireita{
+        width: 20rem!important; 
+        z-index: 1!important;
+        right: 0em!important;
+        bottom: 1em!important;
+    }
+
+    .overlay-map{
+        margin-top: 200px!important;
+        display: block;
+        width: 350px!important;
+        padding: 20px 36px;
+        position: absolute;
+        bottom: 8px!important;
+        right: 8px!important;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        background: rgba(11, 43, 5, 0.90);
+        box-shadow: 0px 3.78483px 94.62074px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .colmargin{
+        margin-bottom: 20px!important;
+    }
+
+    .parental{
+        position: absolute; 
+        right: 125px!important;
+    }
+
+    .paddingvh{
+        padding-top: 12vh!important; 
+        padding-bottom: 12vh!important;
+     }
+
+    
+}
+
 .accordion-item{
 
     background-color: transparent!important;
@@ -36,6 +127,13 @@
 .light-green-bg{
     background-color: var(--bg-light-green)!important;
 }
+
+
+.parental{
+    position: absolute; 
+    right: 300px;
+}
+
 
 .overlay-map{
     display: block;
