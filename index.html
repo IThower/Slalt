@@ -14,6 +14,10 @@
     <meta name="description" content="">
     <link rel="icon" type="image/x-icon" href="/public/images/favicon-slalt.png">
     <title>SLALT Records</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -21,18 +25,18 @@
       integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Josefin+Sans:wght@100;300;400;500;700&family=Montserrat:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
-  </head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
 
-<body style="background-image: url(./public/images/pexels-photo-by-blaz-erzetic.png);">
+<body style="background-image: url(./public/images/pexels-photo-by-blaz-erzetic.png); background-repeat: no-repeat; background-size: contain;">
 
     <!-- Navbar -->
-    <header class="header bg-hero">
+    <header class="header bg-hero" style="position: relative;">
     <div class="container">
 
     <nav class="navbar navbar-expand-lg">
@@ -53,7 +57,7 @@
                 <a class="nav-link text-white" href="#servicos">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Estudio</a>
+                <a class="nav-link text-white" href="#estudio">Estudio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Sobre nos</a>
@@ -62,81 +66,100 @@
         </div>
             <div class="form-div">
             <form class="d-flex text-center" role="search">
-                <button class="btn btnlimegreen text-white" type="submit">Entre em Contato</button>
+                <a class="btn btnlimegreen text-white" href="#contato">Entre em Contato</a>
             </form>
             </div>
         </div>
         </div>
       </nav>
 
-    <div class="row" style="margin-top: 250px; margin-bottom: 250px;">
-        <div class="col-12">
+    <div class="row">
+        <div class="col-12" style="padding-top: 30vh; padding-bottom: 30vh">
             <div class="hero-text text-white d-flex justify-content-center align-items-center flex-column">
                 <h1 class="fw-bold">SLALT RECORDS</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur. Et elementum elit non pellentesque tempor malesuada gravida. Sed est scelerisque eget nec. Faucibus placerat id odio sit amet duis. Nunc faucibus aliquam a venenatis gravida nibh dolor praesent morbi. Nulla mi pretium metus consectetur morbi urna nibh id vel. Id vel non netus fermentum eu enim purus. Lectus erat eget duis metus. Risus maecenas sagittis quis auctor. Ipsum lectus aliquam ridiculus nullam. Placerat dolor consectetur faucibus facilisi. Sociis id vel convallis laoreet turpis pellentesque magna. Fames dictum bibendum euismod sit. Non accumsan sed purus leo.</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur. Et elementum elit non pellentesque tempor malesuada gravida. Sed est scelerisque eget nec. Faucibus placerat id odio sit amet duis. Nunc faucibus aliquam a venenatis gravida nibh dolor praesent morbi. Nulla mi pretium metus consectetur morbi urna nibh id vel. Id vel non netus fermentum eu enim </p>
                 <button type="button" class="btn btnlimegreen text-white">Agende seu horário</button>
             </div>
             </div>
         </div>
-        <div class="text-end">
-            <img src="./public/images/parental2.png" class="img-fluid" alt="parental advisory explicit content">
-        </div>
+            <img src="./public/images/parental2.png" class="img-fluid" alt="parental advisory explicit content" 
+            style="position: absolute; right: 300px;">
     </div>
 </header>
 
-<section class="servicos p-5 bg-green-section" id="servicos">
+<section class="sobre-nos bg-green-section" id="sobre-nos">
+    <div class="container">
+        <div class="row">
+            <div class="wrapper d-flex align-items-center">
+                <div class="hr hr-white2 me-2"></div>
+                <h2 class="text-start my-5 text-white fw-bold">Sobre Nós</h2>
+            </div>
+            <div class="col-md-6 order-md-1 d-flex">
+                <div class="content">
+                    <p class="lead white-text">Lorem ipsum dolor sit amet consectetur. Et elementum elit non pellentesque tempor malesuada gravida. Sed est scelerisque eget nec. Faucibus placerat id odio sit amet duis. Nunc faucibus aliquam a venenatis gravida nibh dolor praesent morbi. Nulla mi pretium metus consectetur morbi urna nibh id vel. Id vel non netus fermentum eu enim purus. Lectus erat eget duis metus. Risus maecenas sagittis quis auctor. Ipsum lectus aliquam ridiculus nullam. Placerat dolor consectetur faucibus facilisi. Sociis id vel convallis laoreet turpis pellentesque magna. Fames dictum bibendum euismod sit. Non accumsan sed purus leo. quis </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 order-md-2 d-flex">
+                <img src="./public/images/img-sobre-nos.png" alt="Sobre-Nós" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="servicos bg-green-section" id="servicos">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="wrapper d-flex align-items-center">
                 <div class="hr hr-white2 me-2"></div>
-                <h2 class="text-start my-4 text-white">Nossos Serviços</h2>
+                <h2 class="text-start my-5 text-white fw-bold">Somos Especialistas</h2>
                 </div>
                 </div>
             </div>
-
         <div class="row g-3">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body p-3 bg-white">
+            <div class="col-md-3">
+                <div class="card card-dark-green white-text text-center">
+                    <div class="card-body p-3 " style="height: 310px;">
                     <div class="text-center">
-                        <img src="./public/images/music-file.svg" alt="music-file" class="img-fluid mt-2">
+                        <img src="./public/images/music-file.svg" alt="music-file" class="img-fluid mt-4">
                     </div>
-                      <h5 class="card-title green-text text-center pb-3 pt-2 fw-bold fs-4">Captação</h5>
-                      <p class="card-text">Grave com qualidade profissional e equipamentos Premium. Nossos engenheiros transformam ideias em gravações incríveis. Alugue nosso espaço para Ensaios e Captação vocais e de instrumentos. Potencialize sua Produção Musical Hoje!</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body p-3 bg-white">
-                        <div class="text-center">
-                            <img src="./public/images/music-mixing.svg" alt="music-file" class="img-fluid mt-2">
-                        </div>
-                      <h5 class="card-title green-text text-center pb-3 pt-2 fw-bold fs-4">Distribuição Musical</h5>
-                      <p class="card-text">Alcance global para sua música através da distribuição em plataformas-chave. Registramos e divulgamos sua arte em streaming e lojas online relevantes. Conquiste audiências globais, proteja seus direitos autorais com nossa orientação especializada.</p>
+                      <h5 class="card-title text-center pb-3 pt-2 fw-bold fs-4">Captação</h5>
+                      <p class="card-text">Grave suas músicas e realize ensaios utilizando nossos equipamentos de qualidade com suporte de nossos engenheiros de som.</p>
                     </div>
                   </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body p-3 bg-white">
+            <div class="col-md-3">
+                <div class="card card-dark-green white-text text-center">
+                    <div class="card-body p-3" style="height: 310px;">
                         <div class="text-center">
-                            <img src="./public/images/musicmp3.svg" alt="music-file" class="img-fluid mt-2">
+                            <img src="./public/images/music-mixing.svg" alt="music-file" class="img-fluid mt-4">
                         </div>
-                      <h5 class="card-title green-text text-center pb-3 pt-2 fw-bold fs-4">Produção Visual</h5>
-                      <p class="card-text">Transformamos Gravações em Obras Cativantes. Nossos Produtores da SLALT dominam Mixagem e Masterização, equilibrando instrumentos, vozes e equalizações para uma estética sonora única. Sua música ganha vida em qualquer sistema de reprodução.</p>
+                      <h5 class="card-title text-center pb-3 pt-2 fw-bold fs-4">Distribuição Musical</h5>
+                      <p class="card-text">Alcance todo o potencial de suas letras e ideias. Masterização e mixagem de qualidade garantida para suas músicas.</p>
                     </div>
                   </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body p-3 bg-white">
+            <div class="col-md-3">
+                <div class="card card-dark-green white-text text-center">
+                    <div class="card-body p-3" style="height: 310px;">
                         <div class="text-center">
-                            <img src="./public/images/video.svg" alt="music-file" class="img-fluid mt-2">
+                            <img src="./public/images/musicmp3.svg" alt="music-file" class="img-fluid mt-4">
                         </div>
-                      <h5 class="card-title green-text text-center pb-3 pt-2 fw-bold fs-4">Audiovisual</h5>
-                      <p class="card-text">A música é uma experiência multissensorial, e nossa produção audiovisual é o elo entre o som e a imagem. Transformamos suas músicas em visualizações cativantes, seja por meio de videoclipes narrativos ou apresentações ao vivo que capturam a energia do momento.</p>
+                      <h5 class="card-title text-center pb-3 pt-2 fw-bold fs-4">Produção Visual</h5>
+                      <p class="card-text">Registramos músicas nas principais plataformas de streaming e oferecemos orientação para proteger direitos autorais.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-dark-green white-text text-center">
+                    <div class="card-body p-3" style="height: 310px;">
+                        <div class="text-center">
+                            <img src="./public/images/video.svg" alt="music-file" class="img-fluid mt-4">
+                        </div>
+                      <h5 class="card-title text-center pb-3 pt-2 fw-bold fs-4">Audiovisual</h5>
+                      <p class="card-text">Transforme sua música em uma experiência completa com nossos recursos de imagem, vídeo e design criativos.</p>
                     </div>
                   </div>
             </div>
@@ -144,95 +167,198 @@
 
 </section>
 
-<section class="bg-green-section p-5">
-    <div class="container estudio bg-white p-5">
-      <div class="row">
+<section class="estudio light-green-bg" id="estudio">
+      <div class="row" style="margin: 0;">
         <div class="d-flex justify-content-center align-items-center text-center mb-4">
-          <div class="hr hr-green2"></div>
-          <h2 class="darkgreen-text px-3 fw-bold">Conheça nosso Estúdio</h2>
-          <div class="hr hr-green2"></div>
+          <div class="hr hr-white2"></div>
+          <h2 class="white-text px-3 fw-bold">Conheça nosso Estúdio</h2>
+          <div class="hr hr-white2"></div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-6">
+            <a href="./public/images/gallery-1.png" data-lightbox="estudio">
             <img src="./public/images/gallery-1.png" alt="Imagem Grande" class="img-fluid">
+            </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="row">
-              <div class="col-md-6">
-                <img src="./public/images/gallery-2.png" alt="Imagem Pequena 1" class="img-fluid mb-4">
+              <div class="col-6">
+                <a href="./public/images/gallery-2.png" data-lightbox="estudio">
+                <img src="./public/images/gallery-2.png" alt="Imagem Pequena 1" class="img-fluid mb-3">
+                </a>
+                <a href="./public/images/gallery-3.png" data-lightbox="estudio">
                 <img src="./public/images/gallery-3.png" alt="Imagem Pequena 2" class="img-fluid">
+                </a>
               </div>
-              <div class="col-md-6">
-                <img src="./public/images/gallery-4.png" alt="Imagem Pequena 3" class="img-fluid mb-4">
+              <div class="col-6">
+                <a href="./public/images/gallery-4.png" data-lightbox="estudio">
+                <img src="./public/images/gallery-4.png" alt="Imagem Pequena 3" class="img-fluid mb-3">
+                </a>
+                <a href="./public/images/gallery-5.png" data-lightbox="estudio">
                 <img src="./public/images/gallery-5.png" alt="Imagem Pequena 4" class="img-fluid">
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-  
+    <div class="container">
+        <div class="row">
+            <div class="wrapper d-flex justify-content-end align-items-center my-5">
+                <h2 class="pe-3 white-text fw-bold">Vantagens de produzir conosco</h2>
+                <div class="hr hr-white2"></div>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item pb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-white" style="background-color: rgba(11, 43, 5, 0.95);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <strong class="me-3">1.</strong><p class="flex-grow-1 m-0 p-0">Vantagem Número 01</p>
+                            <span class="span-form2 ms-2"><img src="./public/images/down-arrow.svg" alt="Vetor"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-white">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item pb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-white" style="background-color: rgba(11, 43, 5, 0.95);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="me-3">2.</strong>
+                            <p class="flex-grow-1 m-0 p-0">Vantagem Número 02</p>
+                            <span class="span-form2 ms-2"><img src="./public/images/down-arrow.svg" alt="Vetor"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body white-text" style="background-color: rgba(11, 43, 5, 0.95);">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item pb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-white" style="background-color: rgba(11, 43, 5, 0.95);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong class="me-3">3.</strong>
+                            <p class="flex-grow-1 m-0 p-0">Vantagem Número 03</p>
+                            <span class="span-form2 ms-2"><img src="./public/images/down-arrow.svg" alt="Vetor"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-white">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        
 
+<section class="nossos-precos bg-green-section">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="wrapper d-flex justify-content-start align-items-center text-center mb-4">
+                <div class="hr hr-white2"></div>
+                <h2 class="white-text px-3 fw-bold">Nossos Preços</h2>
+            </div>
 
-    <div class="row">
-        <div class="wrapper d-flex justify-content-end align-items-center mt-5 mb-3">
-        <h2 class="pe-3 darkgreen-text fw-bold">Vantagens de produzir conosco</h2>
-        <div class="hr hr-green2"></div>
+            <div class="card p-5 card-dark-green text-white" style="width: 22rem; z-index: 1; left: 1em;">
+                <div class="card-body">
+                  <h5 class="card-title white-text fw-bold">Gravação Simples</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><span class="white-text superscript">R$</span> <span class="fw-bold white-text fs-2">30</span><span class="white-text precocardhora">/por hora</span></h6>
+                  <p class="card-text">Grave suas músicas e realize ensaios</p>
+                </div>
+            </div>
+
+            <div class="card p-5 light-green-bg text-white" style="width: 24rem; z-index: 2; position: relative; top: -1em;">
+                <div class="card-body">
+                  <h5 class="card-title white-text fw-bold">Gravação Completa</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><span class="white-text superscript">R$</span> <span class="fw-bold white-text fs-2">60</span><span class="white-text precocardhora">/por hora</span></h6>
+                  <p class="card-text">Gravações especiais com todos os recursos</p>
+                  <a href="#" class="card-link btn btn-primary d-flex justify-content-center align-items-center
+                  " style="width: 100%; background-color: #031200;">Agende seu horário<span class="span-form ms-2"><img src="./public/images/vector-386.svg" alt="Vetor"></span></a>
+                </div>
+            </div>
+
+            <div class="card p-5 card-dark-green text-white" style="width: 22rem; z-index: 1; right: 1em;">
+                <div class="card-body">
+                  <h5 class="card-title white-text fw-bold">Gravação Premium</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><span class="white-text superscript">R$</span> <span class="fw-bold white-text fs-2">90</span><span class="white-text precocardhora">/por hora</span></h6>
+                  <p class="card-text">Grave suas músicas e realize ensaios</p>
+                </div>
+            </div>
+
+        </div>
     </div>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button darkgreen-bg text-white mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed darkgreen-bg text-white mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button darkgreen-bg text-white mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-    </div>
-</div>
 </section>
+
+
+
+
+
+<section class="fale-conosco bg-green-section" id="contato">
+    <div class="container">
+        <div class="row">
+            <div class="wrapper d-flex justify-content-center align-items-center text-center mb-4">
+                <div class="hr hr-white2"></div>
+                <h2 class="white-text px-3 fw-bold">Fale Conosco</h2>
+                <div class="hr hr-white2"></div>
+            </div>
+
+            <div class="col-md-6">
+
+                <form class="card-dark-green p-5 form-border" style="width: 100%; height: 100%;">
+                        <div class="mb-3">
+                      <label for="nome" class="form-label white-text">Nome Completo</label>
+                      <input type="text" class="form-control form-border" id="nome" aria-describedby="emailHelp" placeholder="ex: Fabio Carvalho" >
+                    </div>
+                        <div class="mb-3">
+                      <label for="email" class="form-label white-text ">E-Mail</label>
+                      <input type="email" class="form-control form-border" id="email" placeholder="Coloque o seu melhor e-mail">
+                    </div>
+                        <div class="mb-3">
+                    <label for="telefone" class="form-label white-text">Telefone</label>
+                    <input type="tel" class="form-control form-border" id="telefone" placeholder="(DDD) 0000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                        <div class="mb-3">
+                        <label for="mensagem" class="form-label white-text">Mensagem</label>
+                        <textarea class="form-control form-border" placeholder="Mande sua mensagem para nossa equipe" id="mensagem" style="height: 160px;"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary px-5 py-3 my-4 d-flex justify-content-center align-items-center" style="width: 100%; background-color: #031200;">Mande sua mensagem <span class="span-form ms-2"><img src="./public/images/vector-386.svg" alt="Vetor"></span></button>
+                    
+                  </form>
+            </div>
+            <div class="col-md-6">
+                
+                <div class="wrapper" style="position:relative;">
+                <img src="./public/images/image-map.png" alt="Mapa" class="img-fluid">
+                <div class="overlay-map">
+                    <p class="paragraph-map white-text fw-bold">SLALT Records</p>
+                    <p class="paragraph-map white-text fs-6">Rua Ruthe Reis, Rua José Correia Filho, 209b</p>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 <script src="js/script.js"></script>
 <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-  crossorigin="anonymous"
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+crossorigin="anonymous"
 ></script>
 <script
-  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-  crossorigin="anonymous"
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+crossorigin="anonymous"
 ></script>
+<script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

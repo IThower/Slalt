@@ -4,13 +4,111 @@
     --white: #ffffff;
     --bg-green-section: #031200;
     --dark-green: #031200;
+    --card-dark-green: #3BBC2026;
+    --formbgcolor: #9E9E9E;
+    --bg-light-green: #287016;
   }
-
 
 .green-bg{
     background-color: var(--green)!important;
+    
 }
 
+.accordion-item{
+
+    background-color: transparent!important;
+    border: none!important;
+}
+
+.accordion-button{
+
+    border: none!important;
+
+}
+
+
+
+
+.faleconoscoformbgcolor{
+    background-color: var(--formbgcolor)!important;
+}
+
+.light-green-bg{
+    background-color: var(--bg-light-green)!important;
+}
+
+.overlay-map{
+    display: block;
+    width: 430px;
+    padding: 20px 36px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: rgba(11, 43, 5, 0.90);
+    box-shadow: 0px 3.78483px 94.62074px 0px rgba(0, 0, 0, 0.25);
+}
+
+.paragraph-map{
+    color: var(--Branco, #FFF);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.08px;
+}
+
+.span-form{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 3.298px;
+    justify-content: center;
+    align-items: center;
+    gap: 6.597px;
+    border-radius: 65.967px;
+    background: rgba(255, 255, 255, 0.60);
+}
+
+.span-form2{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 3.298px;
+    justify-content: center;
+    align-items: center;
+    gap: 6.597px;
+    border-radius: 65.967px;
+}
+
+.form-border{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.card-dark-green{
+    background-color: var(--card-dark-green)!important;
+}
+
+.superscript{
+    vertical-align: top;
+    font-size: 10px;
+}
+
+.precocardhora{
+    font-size: 12px;
+    vertical-align: text-top;
+    opacity: 0.7;
+
+}
+
+.text-container {
+    max-height: 100%;
+    overflow: auto;
+}
 .green-bg:hover{
     opacity: 0.8!important;
 }
@@ -83,13 +181,16 @@
     z-index: 999!important;
 }
 
+section{
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
 .estudio{
-    width: 3626px;
-    height: 1250px;
+
     background-repeat: no-repeat;
     background-size: cover;
     background: url(../public/images/slalt-oculos-dourado-1.png), lightgray 50% / cover no-repeat;
-
 }
 
 .bg-hero{
