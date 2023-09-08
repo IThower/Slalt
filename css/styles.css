@@ -18,7 +18,9 @@
    padding-top: 30vh!important; 
    padding-bottom: 30vh!important;
 }
-
+.cardheight{
+    height: 310px!important;
+}
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke= 'green' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
 }
@@ -51,6 +53,52 @@
     width: 22rem!important; 
     z-index: 1!important; 
     right: 1em!important;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1000px) {
+
+    .rowcards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardesquerda,
+    .cardmeio,
+    .carddireita {
+        left: 0!important;
+        right: 0!important;
+        top: 0!important;
+    }
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 1200px){
+
+    .cardheight{
+        height: 450px!important;
+    }
+
+    .cardmeio{
+        width: 22rem!important; 
+
+    }
+    
+    .cardesquerda{
+        width: 18rem!important; 
+        z-index: 1!important;
+
+    }
+    
+    .carddireita{
+        width: 18rem!important; 
+        z-index: 1!important;
+
+    }
+
+    .overlay-map{
+        display: none!important;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
